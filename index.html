@@ -1,0 +1,324 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meet the Creator</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111116;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    font-family: 'Alfa Slab One', serif;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 620px;
+    background: #cbbdbb;
+    display: grid;
+    grid-template-columns: 190px 1fr 190px;
+    gap: 20px;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* SIDE PANELS */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 55px;
+}
+
+.side-paper {
+    width: 100%;
+    height: 220px;
+    background-color: #f4e9e9;
+
+    background-image:
+        linear-gradient(#e8dada 1px, transparent 1px),
+        linear-gradient(90deg, #e8dada 1px, transparent 1px);
+
+    background-size: 10px 10px;
+
+    border: 8px solid #eee2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.side-paper:hover {
+    transform: rotate(-2deg) scale(1.03);
+}
+
+.side-paper h2 {
+    font-size: 21px;
+    color: black;
+}
+
+/* SIDE CHARACTER IMAGES */
+
+.side-character {
+    width: 145px;
+    height: 145px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.side-character img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+
+/* CENTER PAPER */
+
+.main-paper {
+    min-height: 550px;
+    background: #eadcdf;
+    border: 9px solid #827a79;
+    border-radius: 55px 35px 20px 15px;
+
+    box-shadow:
+        8px 8px 0 #aaa09e,
+        15px 15px 0 #827a79;
+
+    position: relative;
+    padding: 40px 25px;
+    text-align: center;
+}
+
+/* PAPER TITLE */
+
+.main-paper h1 {
+    font-size: clamp(24px, 3vw, 38px);
+    color: #090909;
+    margin-bottom: 25px;
+}
+
+/* PROFILE */
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    image-rendering: pixelated;
+    object-fit: contain;
+}
+
+.profile-info {
+    max-width: 230px;
+    text-align: center;
+}
+
+.profile-info h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* BIOGRAPHY */
+
+.bio {
+    margin: 25px auto;
+    max-width: 420px;
+}
+
+.bio h2 {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+
+.bio p {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* STUDENT CARD */
+
+.student-card {
+    position: absolute;
+    bottom: -12px;
+    left: 15px;
+
+    width: 215px;
+    padding: 20px 10px;
+
+    background: #e7d8da;
+    border: 7px solid #898080;
+
+    box-shadow: 5px 5px 0 #b0a5a5;
+
+    transform: rotate(7deg);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* INTERACTIVE LINKS */
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #8d545b;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 800px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 18px;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .side-paper {
+        width: 45%;
+        height: 130px;
+    }
+
+    .side-paper h2 {
+        font-size: 17px;
+    }
+
+    .side-character {
+        width: 100px;
+        height: 100px;
+    }
+
+    .main-paper {
+        min-height: 600px;
+        padding: 35px 15px;
+    }
+
+    .student-card {
+        width: 175px;
+        font-size: 14px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <aside class="sidebar">
+
+        <div class="side-paper">
+            <h2>
+                <a href="index2.html" class="nav-link">
+                    PROJECTS
+                </a>
+            </h2>
+        </div>
+    </aside>
+    <main class="main-paper">
+
+        <h1>MEET THE CREATOR</h1>
+
+        <section class="profile">
+
+            <img
+                src=""
+                class="profile-image"
+                alt="Img"
+            >
+
+            <div class="profile-info">
+
+                <h2>ANTONIO MAGO</h2>
+
+                <p>
+                    Student • Artist • Creator
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="bio">
+
+            <h2>BIO</h2>
+
+            <p>
+                Hi! I am pretty new to coding and creating original projects! This page is dedicated to my works across the quarter!
+            </p>
+
+        </section>
+        <div class="student-card">
+
+            GRADE 10<br>
+            RUBY<br>
+            STUDENT
+
+        </div>
+
+    </main>
+
+    <aside class="sidebar">
+
+    </aside>
+
+</div>
+
+</body>
+</html>
